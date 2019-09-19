@@ -6,8 +6,9 @@ function App() {
   return (
     <>
     <Header/>
-    <Card/>
-    <Player player="x"/>
+    <Card>
+    <Player player="o"/>
+    </Card>
     </>
 
   );
