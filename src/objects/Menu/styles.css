@@ -1,0 +1,18 @@
+.menu{
+    display:block;
+    text-indent: -9999px;
+    cursor:pointer;
+}
+
+.menu::after,.menu::before,.menu > .center{
+    border-radius:2px;
+    content:'';
+    display:block;
+    background-color: var(--color-fourth);
+    height: 4px;
+    width:100%;
+}
+
+.menu::before,.menu > .center{
+    margin-bottom:5px;
+}
