@@ -320,7 +320,7 @@
   details {
     display: block;
   }
-  
+
   /*
    * Add the correct display in all browsers.
    */
@@ -347,3 +347,9 @@
   [hidden] {
     display: none;
   }
+
+  ul,ol{
+    list-style:none;
+    padding:0;
+  }
+  
