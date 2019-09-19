@@ -4,7 +4,7 @@
     cursor:pointer;
 }
 
-.menu::after,.menu::before,.menu > .center{
+.menu::after,.menu::before,.menu > .middle{
     border-radius:2px;
     content:'';
     display:block;
@@ -13,6 +13,6 @@
     width:100%;
 }
 
-.menu::before,.menu > .center{
+.menu::before,.menu > .middle{
     margin-bottom:5px;
 }
