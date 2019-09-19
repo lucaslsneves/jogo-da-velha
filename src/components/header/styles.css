@@ -1,0 +1,13 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:20px 34px;
+}
+.header > .sobre{
+    margin-left:auto;
+    margin-right: 8px;
+}
+.header > .menu{
+    width:25px;
+}
