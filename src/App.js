@@ -8,7 +8,7 @@ const App = () => {
     <main className="app">
     <Header/>
     <Hashtag/>
-    <Input id="show" value="show" content="Mostar eventos"/>
+    <Input type="checkbox"id="show" value="show" content="Mostar eventos"/>
     
     
     </main>
