@@ -1,8 +1,12 @@
 import React from 'react';
 import './styles.css';
-
-const Input = () => {
-    return(<input className="input" id="" type="checkbox" value="show"></input>)
-}
+import Label from '../Label';
+const Input = ({value,id,content}) => (
+   <>
+    <input className="input" id={id} type="checkbox" value={value}/>
+    <Label htmlFor={id} content={content}/>
+  </>
+            
+);
 
 export default Input;
