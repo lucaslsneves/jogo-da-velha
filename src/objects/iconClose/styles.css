@@ -10,21 +10,8 @@
     position: relative;
 
 }
-.icon-close::before{
-    content:'';
-    display:inline-block;
-    width: 32px;
-    height: 4px;
-    background-color: var(--color-zero);
-    border-radius:2px;
-    position: absolute;
-    top:-1;
-    left:2px;
-    transform: rotate(45deg);
-    transform-origin:left top; 
-    
-}
 
+.icon-close::before,
 .icon-close::after{
     content:'';
     display:inline-block;
@@ -33,7 +20,16 @@
     background-color: var(--color-zero);
     border-radius:2px;
     position: absolute;
-    top:-1px;
+    top:-1;
+}
+.icon-close::before{
+    left:2px;
+    transform: rotate(45deg);
+    transform-origin:left top; 
+    
+}
+
+.icon-close::after{
     right:2px;
     transform: rotate(-45deg);
     transform-origin:top right; 
