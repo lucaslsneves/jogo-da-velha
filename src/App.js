@@ -6,7 +6,7 @@ import Checkbox from './objects/Checkbox';
 import About from './objects/About';
 import AboutLink from './objects/AboutLink';
 import IconClose from './objects/iconClose';
-
+import LogoCollab from './objects/LogoCollab';
 const App = () => {
   return (
     <main className="app">
@@ -14,6 +14,7 @@ const App = () => {
     <Hashtag/>
     <Checkbox id = "checkbox" value = "show" content = "Mostar eventos"/>
     <About>
+       <LogoCollab light/>
        <AboutLink className="-white"/>
        <IconClose/>
      </About>  

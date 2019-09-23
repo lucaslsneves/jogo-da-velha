@@ -1,9 +1,13 @@
 import React from 'react';
 import CollabCode from '../../img/logo.png'
-
+import CollabCodeLight from '../../img/logo-light.png';
 import './styles.css';
-const LogoCollab = () =>{
-    return(<img className="logo-collab" src={CollabCode} alt="Logo da CollabCode"/>)
-}
+const LogoCollab = ({light = false}) =>
+    (
+    <img className="logo-collab" 
+     src={light ? CollabCodeLight : CollabCode}
+     alt="Logo da CollabCode"/>
+     );
+
 
 export default LogoCollab;
