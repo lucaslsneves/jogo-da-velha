@@ -6,13 +6,36 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-color:red;
+  
+    position: relative;
+
 }
 .icon-close::before{
     content:'';
     display:inline-block;
-    width: 100%;
+    width: 32px;
     height: 4px;
     background-color: var(--color-zero);
+    border-radius:2px;
+    position: absolute;
+    top:-1;
+    left:2px;
+    transform: rotate(45deg);
+    transform-origin:left top; 
+    
+}
+
+.icon-close::after{
+    content:'';
+    display:inline-block;
+    width: 32px;
+    height: 4px;
+    background-color: var(--color-zero);
+    border-radius:2px;
+    position: absolute;
+    top:-1px;
+    right:2px;
+    transform: rotate(-45deg);
+    transform-origin:top right; 
     
 }
