@@ -2,7 +2,8 @@
     text-align:center;
     
 }
-.app > .header{
+.app > .header,
+.app  .internal-header{
     width:90vw;
     margin:0 auto 85px;
     
@@ -15,3 +16,4 @@
     margin-bottom:40px;
 }
 
+ 
