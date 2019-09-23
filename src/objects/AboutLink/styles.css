@@ -5,3 +5,7 @@
     font-weight: bold;
     font-size: 14px;
   }
+
+.about-link.-white{
+  color:var(--color-zero);
+}
