@@ -7,3 +7,7 @@
     left: 0;
 }
 
+.about > .internal-header{
+    width:90vw;
+    margin:0 auto 90px;
+}
