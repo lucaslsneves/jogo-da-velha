@@ -3,12 +3,12 @@ import './styles.css';
 import AvatarProfile from '../../objects/AvatarProfile';
 import AvatarLucas from '../../img/lucas.jpeg';
 const UserProfile = () =>(
-    <dl>
-        <dd>
+    <dl className="user-profile">
+        <dd className="avatar">
         <AvatarProfile src={AvatarLucas} alt="Avatar Lucas"/>
         </dd>
-        <dt>Lucas Luz</dt>
-        <dd>Front-end developer HTML,CSS,JS e React</dd>
+        <dt className="title">Lucas Luz</dt>
+        <dd className="description">Front-end developer HTML,CSS,JS e React</dd>
     </dl>
 );
 
