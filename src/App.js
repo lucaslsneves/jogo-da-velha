@@ -7,14 +7,20 @@ import About from './objects/About';
 import InternalHeader from './components/InternalHeader';
 import UserProfile from './components/UserProfile';
 
+let activeAbout = "";
+
+const handleClick = () => activeAbout = "-active";
+
+
+
 
 const App = () => {
   return (
     <main className="app">
-    <Header/>
+    <Header onClick={handleClick}/>
     <Hashtag/>
     <Checkbox id = "checkbox" value = "show" content = "Mostar eventos"/>
-    <About>
+    <About className={activeAbout}>
         <InternalHeader/>
         <UserProfile/>
      </About>  
