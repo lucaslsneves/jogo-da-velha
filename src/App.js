@@ -9,18 +9,18 @@ import UserProfile from './components/UserProfile';
 
 
 const App = () => {
-const handleClick = () => {
-  setActiveAbout("-active");
-};
+const handleClickAdd = () => setActiveAbout("-active");
+const handleClickRemove = () => setActiveAbout("");  
+
 const [activeAbout,setActiveAbout] = useState("")
 
   return (
     <main className="app">
-    <Header onClick={handleClick}/>
+    <Header onClick={handleClickAdd}/>
     <Hashtag/>
     <Checkbox id = "checkbox" value = "show" content = "Mostar eventos"/>
     <About className={activeAbout}>
-        <InternalHeader/>
+        <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>
      </About>  
     </main>
