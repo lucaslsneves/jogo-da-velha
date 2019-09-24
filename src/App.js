@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
@@ -7,14 +7,13 @@ import About from './objects/About';
 import InternalHeader from './components/InternalHeader';
 import UserProfile from './components/UserProfile';
 
-let activeAbout = "";
-
-const handleClick = () => activeAbout = "-active";
-
-
-
 
 const App = () => {
+const handleClick = () => {
+  setActiveAbout("-active");
+};
+const [activeAbout,setActiveAbout] = useState("")
+
   return (
     <main className="app">
     <Header onClick={handleClick}/>
