@@ -10,12 +10,21 @@
     margin-bottom:15px;
 }   
 .user-profile > .description{
-    font-size:var(--size-small);
-    width:70%;
+    font-size:16px;
+    width:80%;
     margin:0 auto;
+    margin-bottom:50px;
+    line-height: 1.6;
 }
 .user-profile .avatar-profile{
     width: 200px;
     height: 200px;
+}
+
+.user-profile .socials{
+   display:flex;
+   margin:0 auto;
+   justify-content: space-between;
+  width:70%;
 }
 

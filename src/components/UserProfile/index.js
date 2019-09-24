@@ -16,11 +16,11 @@ const UserProfile = () =>(
         <dt className="title">Lucas Luz</dt>
         <dd className="description">Front-end developer HTML,CSS,JS e React</dd>
         <dd className="socials">
-            <SocialIcon src={GitHubIcon} alt="Ícone do GitHub"/>
-            <SocialIcon src={LinkedinIcon} alt="Ícone do Linkedin"/>
-            <SocialIcon src={FacebookIcon} alt="Ícone do Facebook"/>
-            <SocialIcon src={TwitterIcon} alt="Ícone do Twitter"/>
-            <SocialIcon src={InstagramIcon} alt="Ícone do Instagram"/>
+            <SocialIcon href="https://github.com/lucasluz99" src={GitHubIcon} alt="Ícone do GitHub"/>
+            <SocialIcon href="https://www.linkedin.com/" src={LinkedinIcon} alt="Ícone do Linkedin"/>
+            <SocialIcon href="https://www.facebook.com/" src={FacebookIcon} alt="Ícone do Facebook"/>
+            <SocialIcon href="https://twitter.com/" src={TwitterIcon} alt="Ícone do Twitter"/>
+            <SocialIcon href="https://instagram.com" src={InstagramIcon} alt="Ícone do Instagram"/>
         </dd>
     </dl>
 );
