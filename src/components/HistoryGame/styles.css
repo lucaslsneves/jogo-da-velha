@@ -1,3 +1,6 @@
+.history-game.-active{
+    display: none;
+}
 
 .history-game  .tag-game{
     display: inline-block;

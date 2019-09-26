@@ -19,6 +19,9 @@
 }
 
  .app > .history-game{
+     display:none;
     margin-top:42px;
-    margin-left:auto;
+ }
+ .app > .history-game.-active{
+     display:block;
  }
