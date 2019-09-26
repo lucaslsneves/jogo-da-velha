@@ -1,0 +1,9 @@
+.tag-game{
+    width: 127px;
+    display:block;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 2em;
+    background-color: var(--color-zero);
+    color:var( --color-negative);
+}
