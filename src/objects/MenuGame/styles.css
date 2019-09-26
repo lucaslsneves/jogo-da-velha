@@ -2,6 +2,7 @@
     display:block;
     text-indent: -9999px;
     cursor:pointer;
+    
 }
 
 .menu-game::after,.menu-game::before,.menu-game > .middle{

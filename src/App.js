@@ -15,6 +15,7 @@ const handleClickRemove = () => setActiveLayerDark("");
 const [activeLayerDark,setActiveLayerDark] = useState("")
 
   return (
+   
     <main className="app">
     <HeaderGame onClick={handleClickAdd}/>
     <HashtagGame/>
@@ -24,7 +25,7 @@ const [activeLayerDark,setActiveLayerDark] = useState("")
         <UserProfile/>
      </LayerDark>  
     </main>
-
+ 
   );
 }
 

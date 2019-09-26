@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+
 
 const InputGame = ({id = "" ,value = "",type ="text"}) => (
 
