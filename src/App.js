@@ -6,6 +6,7 @@ import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import InternalHeader from './components/InternalHeader';
 import UserProfile from './components/UserProfile';
+import TagGame from './objects/TagGame';
 
 
 const App = () => {
@@ -20,7 +21,8 @@ const [activeLayerDark,setActiveLayerDark] = useState("")
     <HeaderGame onClick={handleClickAdd}/>
     <HashtagGame/>
     <InputCheckbox id = "checkbox" value = "show" content = "Mostar eventos"/>
-    <LayerDark className={activeLayerDark}>
+    <TagGame content="Adicionou O"/>
+   <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>
      </LayerDark>  
