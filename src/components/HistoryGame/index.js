@@ -4,15 +4,15 @@ import './styles.css';
 
 const HistoryGame = () => (
     <ol className="history-game">
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
-        <li className="action">Adicionou X<TagGame/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
+        <li className="action"><TagGame content="Adicionou X"/></li>
     </ol>
 );
 
