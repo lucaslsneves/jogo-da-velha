@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 const About = ({children,className = ""}) => (
-    <article className={`about ${className}`}>
+    <article className={`layer-dark ${className}`}>
         {children}
     </article>
 )

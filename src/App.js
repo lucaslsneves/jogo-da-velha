@@ -3,26 +3,26 @@ import './App.css';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
 import Checkbox from './objects/Checkbox';
-import About from './objects/About';
+import LayerDark from './objects/LayerDark';
 import InternalHeader from './components/InternalHeader';
 import UserProfile from './components/UserProfile';
 
 
 const App = () => {
-const handleClickAdd = () => setActiveAbout("-active");
-const handleClickRemove = () => setActiveAbout("");  
+const handleClickAdd = () => setActiveLayerDark("-active");
+const handleClickRemove = () => setActiveLayerDark("");  
 
-const [activeAbout,setActiveAbout] = useState("")
+const [activeLayerDark,setActiveLayerDark] = useState("")
 
   return (
     <main className="app">
     <Header onClick={handleClickAdd}/>
     <Hashtag/>
     <Checkbox id = "checkbox" value = "show" content = "Mostar eventos"/>
-    <About className={activeAbout}>
+    <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>
-     </About>  
+     </LayerDark>  
     </main>
 
   );
