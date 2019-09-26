@@ -1,14 +1,14 @@
-.header{
+.header-game{
     display:flex;
     justify-content:space-between;
     align-items: center;
     padding-top:20px;
     padding-bottom:20px;
 }
-.header > .about-link{
+.header-game > .about-link{
     margin-left:auto;
     margin-right: 8px;
 }
-.header > .menu{
+.header-game > .menu{
     width:25px;
 }

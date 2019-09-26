@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import Hashtag from './components/Hashtag';
+import HeaderGame from './components/HeaderGame';
+import HashtagGame from './components/HashtagGame';
 import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import InternalHeader from './components/InternalHeader';
@@ -16,8 +16,8 @@ const [activeLayerDark,setActiveLayerDark] = useState("")
 
   return (
     <main className="app">
-    <Header onClick={handleClickAdd}/>
-    <Hashtag/>
+    <HeaderGame onClick={handleClickAdd}/>
+    <HashtagGame/>
     <InputCheckbox id = "checkbox" value = "show" content = "Mostar eventos"/>
     <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>

@@ -4,9 +4,9 @@ import AboutLink from '../../objects/AboutLink'
 import MenuGame from '../../objects/MenuGame';
 import './styles.css';
 
-const Header = ({onClick}) =>{
+const HeaderGame = ({onClick}) =>{
     return(
-    <header className="header">
+    <header className="header-game">
         <LogoCollab/>
         <AboutLink onClick={onClick}/>
         <MenuGame onClick={onClick}/>
@@ -14,4 +14,4 @@ const Header = ({onClick}) =>{
     );
 }
 
-export default Header;
+export default HeaderGame;

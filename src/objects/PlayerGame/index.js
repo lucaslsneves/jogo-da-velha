@@ -3,7 +3,7 @@ import './styles.css';
 import playerX from '../../img/player-x.png'
 import playerO from '../../img/player-circle.png';
 
-const Player = ({player}) =>{
+const PlayerGame = ({player}) =>{
     const players = [];
     players['x'] = playerX;
     players['o'] = playerO;
@@ -12,4 +12,4 @@ const Player = ({player}) =>{
         <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`}></img>
     </button>);
 }
-export default Player;
+export default PlayerGame;
