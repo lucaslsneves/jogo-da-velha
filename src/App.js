@@ -24,7 +24,7 @@ const handleClickRemove = () => setActiveLayerDark("");
     <HashtagGame/>
     <InputCheckbox  id = "checkbox" value = "show" content = "Mostar eventos"/>
     <HistoryGame/>
-   <LayerDark className={activeLayerDark}>
+    <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>
      </LayerDark>  

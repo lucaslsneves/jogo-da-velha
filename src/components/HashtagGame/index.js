@@ -7,6 +7,17 @@ import './styles.css';
 
 const HashtagGame = () =>{
     const [nextPlayer,setNextPlayer] = useState("x");
+    const [players,setPlayers] = useState(
+        [{id:1,content: ''},
+        {id:2,content: ''},
+        {id:3,content: ''},
+        {id:4,content: ''},
+        {id:5,content: ''},
+        {id:6,content: ''},
+        {id:7,content: ''},
+        {id:8,content: ''},
+        {id:9,content: ''}]
+    );
     
     const handleClick  = () => {
         console.log("proximo jogador",nextPlayer);
@@ -15,18 +26,10 @@ const HashtagGame = () =>{
 
     return(
     <CardGame>
+         
         <ul className="hashtag-game" onClick={handleClick}>
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame /></li>
-
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame/></li>
-
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame/></li>
-             <li className="item"><PlayerGame/></li>
+           {players.map(player => <li className="item"><PlayerGame /></li> )}
+            
         </ul>
     </CardGame>
     )
