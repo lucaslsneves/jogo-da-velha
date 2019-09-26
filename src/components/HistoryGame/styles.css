@@ -1,12 +1,12 @@
-.history-game{
 
+.history-game  .tag-game{
+    display: inline-block;
+    box-sizing:border-box; 
+    width: 130px;
 }
 
 .history-game > .action{
     margin-bottom:15px;
 }
 
-.history-game > .tag-game{
-    display:block;
-}
 

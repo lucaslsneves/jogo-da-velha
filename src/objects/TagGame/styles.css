@@ -4,4 +4,11 @@
     border-radius: 2em;
     background-color: var(--color-zero);
     color:var( --color-negative);
+    
 }
+
+.tag-game.-end{
+    background-color:var(--color-nineth);
+    text-transform: uppercase;
+}
+
