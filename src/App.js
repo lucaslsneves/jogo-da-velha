@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hashtag from './components/Hashtag';
-import Checkbox from './objects/Checkbox';
+import InputCheckbox from './objects/InputCheckbox';
 import LayerDark from './objects/LayerDark';
 import InternalHeader from './components/InternalHeader';
 import UserProfile from './components/UserProfile';
@@ -18,7 +18,7 @@ const [activeLayerDark,setActiveLayerDark] = useState("")
     <main className="app">
     <Header onClick={handleClickAdd}/>
     <Hashtag/>
-    <Checkbox id = "checkbox" value = "show" content = "Mostar eventos"/>
+    <InputCheckbox id = "checkbox" value = "show" content = "Mostar eventos"/>
     <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-const About = ({children,className = ""}) => (
+const LayerDark = ({children,className = ""}) => (
     <article className={`layer-dark ${className}`}>
         {children}
     </article>
@@ -8,4 +8,4 @@ const About = ({children,className = ""}) => (
     
 ;
 
-export default About;
+export default LayerDark;

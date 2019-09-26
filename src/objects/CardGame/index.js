@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const Card = ({children}) =>{
+const CardGame = ({children}) =>{
     return(
     <article className="card-game">
         {children}
@@ -9,4 +9,4 @@ const Card = ({children}) =>{
     );
 }
 
-export default Card;
+export default CardGame;
