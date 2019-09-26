@@ -10,15 +10,9 @@ const HashtagGame = () =>{
     
     const handleClick  = () => {
         console.log("proximo jogador",nextPlayer);
-        setNextPlayer((old) =>{
-             if(old === "x"){
-                 return "o";
-             }else{
-                 return "x";
-             }
-             
-        })
-    };
+        setNextPlayer(old => old === "x" ? "o" : "x");        
+    }
+
     return(
     <CardGame>
         <ul className="hashtag-game" onClick={handleClick}>
