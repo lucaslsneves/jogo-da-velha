@@ -1,10 +1,10 @@
-.menu{
+.menu-game{
     display:block;
     text-indent: -9999px;
     cursor:pointer;
 }
 
-.menu::after,.menu::before,.menu > .middle{
+.menu-game::after,.menu-game::before,.menu-game > .middle{
     border-radius:2px;
     content:'';
     display:block;
@@ -13,6 +13,6 @@
     width:100%;
 }
 
-.menu::before,.menu > .middle{
+.menu-game::before,.menu-game > .middle{
     margin-bottom:5px;
 }

@@ -1,9 +1,9 @@
-.label{
+.label-game{
     font-weight: bold;
     font-size:var(--size-small);
     color:var(--color-fourth);
 }
-.label::selection{
+.label-game::selection{
     background-color: var(--color-first);
     color: var(--color-zero);
 }
