@@ -16,8 +16,8 @@ const App = () => {
 const handleClickAdd = () => setActiveLayerDark("-active");
 const handleClickRemove = () => setActiveLayerDark("");  
 
-const handleClick = () => {
-  setHistoryGame("-active")
+const handleClickHistory = () => {
+  setHistoryGame((old) => old === "-active" ? "" : "-active" )  
 }
     
 
@@ -27,7 +27,7 @@ const handleClick = () => {
     <main className="app" id="main">
     <HeaderGame onClick={handleClickAdd}/>
     <HashtagGame/>
-    <InputCheckbox onClick={handleClick} id = "checkbox" value = "show" content = "Mostar eventos"/>
+    <InputCheckbox onClick={handleClickHistory} id = "checkbox" value = "show" content = "Mostar eventos"/>
     <HistoryGame className={activeHistoryGame}/>
    <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
