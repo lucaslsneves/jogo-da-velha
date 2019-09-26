@@ -16,7 +16,7 @@ const [activeLayerDark,setActiveLayerDark] = useState("")
 
   return (
    
-    <main className="app">
+    <main className="app" id="main">
     <HeaderGame onClick={handleClickAdd}/>
     <HashtagGame/>
     <InputCheckbox id = "checkbox" value = "show" content = "Mostar eventos"/>
