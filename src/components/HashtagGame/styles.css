@@ -1,6 +1,9 @@
 .card-game{
     padding:15px;
 }
+.hashtag-game .player-game{
+    flex-basis:100%;
+}
 .hashtag-game{
     display:grid;
     height: 100%;
