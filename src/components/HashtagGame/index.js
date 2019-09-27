@@ -5,7 +5,7 @@ import './styles.css';
 
 
 
-const HashtagGame = () =>{
+const HashtagGame = ({callback}) =>{
     const [nextPlayer,setNextPlayer] = useState("x");
     const [players,setPlayers] = useState(
        [{id:1,content: ''},
@@ -19,12 +19,11 @@ const HashtagGame = () =>{
         {id:9,content: ''}]
     );
     
-    const handleClick  = (id,content) => {
+    const handleClick  = (id) => {
         
             setPlayers(old => old.map(player => player.id === id  ? {id,content:nextPlayer} : player))
+            callback(nextPlayer);
             setNextPlayer(old => old === "x" ? "o" : "x");        
-        
-       
     }
 
     return(

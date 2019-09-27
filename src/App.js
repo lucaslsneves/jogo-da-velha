@@ -11,19 +11,22 @@ import HistoryGame from './components/HistoryGame';
 
 const App = () => {
   const [activeLayerDark,setActiveLayerDark] = useState("");
-
+  const history = [];
 
 const handleClickAdd = () => setActiveLayerDark("-active");
 const handleClickRemove = () => setActiveLayerDark("");  
 
+const addHistory = (player) =>{
+   history.push(`Adicionou ${player.toUpperCase()}`);
+}
   
   return (
    
     <main className="app" id="main">
     <HeaderGame onClick={handleClickAdd}/>
-    <HashtagGame/>
+    <HashtagGame callback={addHistory}/>
     <InputCheckbox  id = "checkbox" value = "show" content = "Mostar eventos"/>
-    <HistoryGame/>
+    <HistoryGame  history={history}/>
     <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove}/>
         <UserProfile/>
