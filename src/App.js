@@ -7,6 +7,7 @@ import LayerDark from "./objects/LayerDark";
 import InternalHeader from "./components/InternalHeader";
 import UserProfile from "./components/UserProfile";
 import HistoryGame from "./components/HistoryGame";
+import WrapperHashtagHistory from "./components/WrapperHashtagHistory";
 
 const App = () => {
   const [activeLayerDark, setActiveLayerDark] = useState("");
@@ -22,9 +23,13 @@ const App = () => {
   return (
     <main className="app" id="main">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame callback={addHistory} />
-      <InputCheckbox id="checkbox" value="show" content="Mostar eventos" />
-      <HistoryGame history={history} />
+      
+      <WrapperHashtagHistory>
+        <HashtagGame callback={addHistory} />
+        <InputCheckbox id="checkbox" value="show" content="Mostar eventos" />
+        <HistoryGame history={history} />
+      </WrapperHashtagHistory>
+
       <LayerDark className={activeLayerDark}>
         <InternalHeader onClick={handleClickRemove} />
         <UserProfile />
