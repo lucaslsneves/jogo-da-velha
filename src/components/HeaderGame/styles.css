@@ -12,3 +12,21 @@
 .header-game > .menu-game{
     width:25px;
 }
+.header-game > .logo-collab{
+    width: 130px;
+}
+
+@media (min-width:740px){
+    .header-game{
+        background-color: var(--color-tenth); 
+    }
+    .header-game > .logo-collab{
+        width: 230px;
+    }
+    .header-game > .about-link{
+        font-size:18px;
+    }
+    .header-game > .menu-game{
+        width: 30px;
+    }
+}

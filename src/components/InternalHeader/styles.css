@@ -2,10 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px 35px;
+    padding:20px 0px;
 }
 
 .internal-header > .about-link{
     margin-left: auto;
     margin-right: 10px;
+}
+
+.internal-header > .logo-collab{
+    width: 130px;
+}
+
+@media (min-width:740px){
+    .internal-header > .logo-collab{
+        width: 230px;
+    }
+    .internal-header > .about-link{
+        font-size:18px;
+    }
 }
