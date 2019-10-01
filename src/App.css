@@ -8,6 +8,7 @@
 .app > .header-game{
     width:90vw;
     margin:0 auto 90px;
+    min-width: 260px;
     
 }
 .app > .card-game{
@@ -17,12 +18,18 @@
     height: 90vw;
     max-width: 330px;
     max-height: 330px;
+    min-width: 260px;
+    min-height: 260px;
     margin-bottom:40px;
 }
 
  .app > .history-game{
-     display:none;
+    display:none;
     margin-top:42px;
+ }
+ .app > .label-game{
+     display: flex;
+     justify-content: center;
  }
  .app > .input-game:checked ~ .history-game{
      display:block;
