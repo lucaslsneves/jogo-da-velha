@@ -20,7 +20,6 @@ const HashtagGame = ({callback}) =>{
     );
     
     const handleClick  = (id) => {
-        
             setPlayers(old => old.map(player => player.id === id  ? {id,content:nextPlayer} : player))
             callback(nextPlayer);
             setNextPlayer(old => old === "x" ? "o" : "x");        
