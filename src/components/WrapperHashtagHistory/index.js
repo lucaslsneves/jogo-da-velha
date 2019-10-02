@@ -2,8 +2,8 @@ import React from 'react';
 import './styles.css';
 
 
-const WrapperHashtagHistory = ({children}) =>(
-    <div className="wrapper-hashtagHistory">
+const WrapperHashtagHistory = ({children,active,history}) =>(
+    <div className={`wrapper-hashtagHistory ${active && history != `` ? `-active` : ``}`}>
         {children}
     </div>
 )   

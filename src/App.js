@@ -12,7 +12,7 @@ import WrapperHashtagHistory from "./components/WrapperHashtagHistory";
 const App = () => {
   const [activeLayerDark, setActiveLayerDark] = useState("");
   const [history, setHistory] = useState([]);
-
+  const [active,setActive] = useState(false);
   const handleClickAdd = () => setActiveLayerDark("-active");
   const handleClickRemove = () => setActiveLayerDark("");
 
@@ -20,13 +20,18 @@ const App = () => {
     setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
 
+  const showHideHistory = () =>{
+      setActive((old) => old ? false : true);
+      
+  }
+
   return (
     <main className="app" id="main">
       <HeaderGame onClick={handleClickAdd} />
       
-      <WrapperHashtagHistory>
+      <WrapperHashtagHistory history={history} active={active}>
         <HashtagGame callback={addHistory} />
-        <InputCheckbox id="checkbox" value="show" content="Mostar eventos" />
+        <InputCheckbox onClick={showHideHistory} id="checkbox" value="show" content="Mostar eventos" />
         <HistoryGame history={history} />
       </WrapperHashtagHistory>
 

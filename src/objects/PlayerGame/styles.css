@@ -2,6 +2,7 @@
     background:none;
     border:none;
     cursor:pointer;
+    transition: background-color 100ms linear;
 }
 .player-game:hover{
     background-color: var(--color-eleventh);

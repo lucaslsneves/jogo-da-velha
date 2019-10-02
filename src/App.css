@@ -49,15 +49,30 @@
         position:relative;
         display: inline-flex;
         justify-content: center;
+        transition: transform 150ms linear;
         
     }
+    .app > .wrapper-hashtagHistory.-active{
+            transform:translateX(-25%);
+    }
     .app .history-game{
+        position:absolute;
+        z-index: -1;
+        opacity:0;
         margin-top:0;
+        display: block;
+        transition:transform 150ms linear,opacity 1ms linear 150ms;
+        
     }
+
+     .app > .wrapper-hashtagHistory.-active > .history-game{
+        transition:transform 150ms linear;
+         opacity: 1;
+         transform:translateX(200%);
+     }
     
-    .app .card-game{
-        margin-right: 40px;
-    }
+    
+    
     .app .label-game{
         position: absolute;
         top:370px;
