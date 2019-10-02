@@ -15,7 +15,7 @@ const App = () => {
   const [active,setActive] = useState(false);
   const handleClickAdd = () => setActiveLayerDark("-active");
   const handleClickRemove = () => setActiveLayerDark("");
-
+ 
   const addHistory = (player,id) => {
     setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
@@ -25,6 +25,10 @@ const App = () => {
       
   }
 
+  const changeHistory = key =>{
+    setHistory(old => history.slice(0,key+1))
+  }
+
   return (
     <main className="app" id="main">
       <HeaderGame onClick={handleClickAdd} />
@@ -32,7 +36,7 @@ const App = () => {
       <WrapperHashtagHistory active={active}>
         <HashtagGame callback={addHistory} />
         <InputCheckbox onClick={showHideHistory} id="checkbox" value="show" content="Mostar eventos" />
-        <HistoryGame history={history} />
+        <HistoryGame onClick={changeHistory} history={history} />
       </WrapperHashtagHistory>
 
       <LayerDark className={activeLayerDark}>
