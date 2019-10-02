@@ -4,7 +4,7 @@ import './styles.css';
 
 const WrapperHashtagHistory = ({children,active,history}) =>(
 
-    <div className={`wrapper-hashtagHistory ${active && history.length !== 0  ? `-active` : ``}`}>
+    <div className={`wrapper-hashtagHistory ${active ? `-active` : ``}`}>
         {children}
     </div>
 )   

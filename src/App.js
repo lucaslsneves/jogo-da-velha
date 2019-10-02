@@ -11,7 +11,7 @@ import WrapperHashtagHistory from "./components/WrapperHashtagHistory";
 
 const App = () => {
   const [activeLayerDark, setActiveLayerDark] = useState("");
-  const [history, setHistory] = useState([]);
+  const [history, setHistory] = useState(["Início"]);
   const [active,setActive] = useState(false);
   const handleClickAdd = () => setActiveLayerDark("-active");
   const handleClickRemove = () => setActiveLayerDark("");
@@ -29,7 +29,7 @@ const App = () => {
     <main className="app" id="main">
       <HeaderGame onClick={handleClickAdd} />
       
-      <WrapperHashtagHistory history={history} active={active}>
+      <WrapperHashtagHistory active={active}>
         <HashtagGame callback={addHistory} />
         <InputCheckbox onClick={showHideHistory} id="checkbox" value="show" content="Mostar eventos" />
         <HistoryGame history={history} />
