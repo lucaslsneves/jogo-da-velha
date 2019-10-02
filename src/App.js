@@ -16,7 +16,7 @@ const App = () => {
   const handleClickAdd = () => setActiveLayerDark("-active");
   const handleClickRemove = () => setActiveLayerDark("");
 
-  const addHistory = player => {
+  const addHistory = (player,id) => {
     setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
 
