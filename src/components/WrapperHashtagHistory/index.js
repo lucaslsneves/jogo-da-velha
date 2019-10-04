@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import './styles.css';
+import NextPlayer from '../../objects/nextPlayer';
 import HistoryGame from "../HistoryGame";
 import HashtagGame from "../HashtagGame";
 import InputCheckbox from "../../objects/InputCheckbox";
@@ -29,16 +30,15 @@ const [historyGame,setHistoryGame] = useState(
    ]
      );
 
-const addHistory = (player,id) => {
+const addHistory = (player) => {
     setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
 
 const changeHistory = key =>{
+    key === 0 && setNextPlayer('x');
     setLastRound(key);
     setHistory(old => old.slice(0,key+1))
     setHistoryGame(old => old.slice(0,key+1));
-       
-    
   }
   const showHideHistory = () =>{
     setActive((old) => old ? false : true);
@@ -58,6 +58,7 @@ const handleClick  = (id) => {
     
     return(
     <div className={`wrapper-hashtagHistory ${active ? `-active` : ``}`}>
+        <NextPlayer content={nextPlayer}/>
         <HashtagGame lastRound={lastRound} historyGame={historyGame} onClick={handleClick} />
         <InputCheckbox onClick={showHideHistory} id="checkbox" value="show" content="Mostar eventos" />
         <HistoryGame onClick={changeHistory} history={history} />
